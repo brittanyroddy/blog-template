@@ -1,0 +1,115 @@
+$inactive-color: rgba(0, 0, 0, .7);
+
+.nav {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 5fr;
+}
+
+.comp-nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-row: 2;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  // justify-items: center;
+  align-self: center;
+  gap: 2px;
+}
+
+.comp-nav-list li {
+  background-color: $inactive-color;
+  position: relative;
+  display: block;
+  width: 200px;
+  margin-left: 15px;
+
+  transition: background-color 0.2s;
+}
+
+.comp-nav-list li:hover {
+  cursor: pointer;
+  background-color: $color-2-bright;
+}
+
+.active {
+  cursor: pointer;
+  background-color: $color-2-bright;
+}
+
+.comp-nav-list li::after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid $inactive-color;
+    border-radius: 0px 0px 0px 0px;
+    clear: both;
+
+    transition: border-top 0.2s;
+}
+
+.comp-nav-list li:hover:after{
+  cursor: pointer;
+  border-top: 20px solid $color-2-bright;
+}
+
+.active > .comp-nav-list li:hover:after{
+  cursor: pointer;
+  border-top: 20px solid $color-2-bright;
+}
+
+.comp-nav-list li::before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-right: 0px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 20px solid $inactive-color;
+    border-radius: 0px 0px 0px 0px;
+    clear: both;
+
+    transition: border-bottom 0.2s;
+}
+
+.comp-nav-list li:hover:before{
+  cursor: pointer;
+  border-bottom: 20px solid $color-2-bright;
+}
+
+.active > .comp-nav-list li:hover:before{
+  cursor: pointer;
+  border-bottom: 20px solid $color-2-bright;
+}
+
+.comp-nav-list li a {
+  color: $color-2-bright;
+  text-decoration: none;
+  transition: color 0.2s, margin-left;
+  text-transform: uppercase;
+
+  display: block;
+  margin-left: 5px;
+  width: 100%;
+  height: 20px;
+}
+
+.comp-nav-list li a:hover {
+  color: $inactive-color;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.active > .comp-nav-list li a:hover {
+  color: $inactive-color;
+  text-decoration: none;
+}
