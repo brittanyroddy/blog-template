@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   // overflow: hidden;
-  background-image: url('../assets/imgs/background.jpg');
+  background-image: url('https://images2.alphacoders.com/820/820119.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,6 +19,12 @@ h1, h2, h3, h4, h5, h6 {
 span, p, a, label, input, strong, button, small, li {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
+}
+
+article a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $color-2-bright;
+  text-decoration: underline;
 }
 
 time {

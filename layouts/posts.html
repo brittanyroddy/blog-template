@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167496250-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167496250-1');
+  </script>
+
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
@@ -10,38 +20,6 @@
 </head>
 
 <body class="posts">
-  <!-- <nav>
-      <a class="test" href="/">Home</a>
-
-      <a class="test" href="/posts/first-post/">Test</a>
-      
-      <a href="/posts/second-post/">About</a>
-      
-      <a href="/posts/third-post/">Again</a>
-      
-      <a href="/posts/fourth-post/">Let's nav</a>
-  </nav> -->
-<!-- 
-  <nav class="comp-nav-list">
-    <li>
-      <a class="test" href="/">Home</a>
-    </li>
-    <li>
-      <a class="test" href="/posts/first-post/">Test</a>
-    </li>
-    <li>
-      <a href="/posts/second-post/">About</a>
-    </li>
-    <li>
-      <a href="/posts/third-post/">Again</a>
-    </li>
-    <li>
-      <a href="/posts/fourth-post/">Let's nav</a>
-    </li>
-  </nav>
-
-   -->
-
    <main class="comp-pc-posts">
      <h1 class="comp-pc-title">Rocket League Posts</h1>
      <div class="comp-pc-post-items">
@@ -49,18 +27,11 @@
       <a class="comp-pc-post-item"
       href="../{{ path }}">
         <span class="comp-pc-post-title">{{title}}</span>
-        <small class="comp-pc-post-date">{{date}}</small>
+        <time datetime="{{date}}" class="comp-pc-post-date">{{date}}</time>
      </a>
       {{/each}}
      </div>
    </main>
-
-
-<!-- 
-  <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
-
-  {{{ contents }}} -->
 
   <footer>
     <a href="../menu" class="go-to-menu">(click here for menu)</a>

@@ -1,8 +1,10 @@
 ---
-title: 1v1 Power Rankings - Week 0
+title: Rocket League 1v1 Power Rankings - Week 0
 date: 2020-05-20
 collection: posts
 layout: post.html
+image: https://images8.alphacoders.com/820/820113.jpg
+alt: Top down view of Rocket League pitch.
 description: Rocket League 1v1 deserves more attention.  This post details the purpose of 1vee1.com.  Much respect to Fairy Peak, Okhalid, Squishy Muffins and many more for giving us amazing content for years.
 ---
 
@@ -49,4 +51,3 @@ He doesn't have bad games.
 Every game is an Okhalid game.
 
 He crushes opponents with unstoppable bounce dribbles.  When others are running out of steam by game 5, Okhalid is prepared to bring the same level of play game in and game out.  If you're lucky enough to have moderate success, he dips in to a formidable bag of tricks.  Okhalid's mechanics will confuse casual observes looking for flashy plays to inform their opinions on mechanics.  Make no mistake, the mechanics Okhalid has mastered leads more directly to 1v1 wins than anyone in the world.
-

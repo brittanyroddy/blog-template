@@ -26,8 +26,11 @@
     }
   },
   "scripts": {
-    "serve": "node index.js && serve build",
+    "serve": "node index.js && serve -l 5000 build",
     "watch": "npm-watch",
-    "deploy": "aws s3 rm s3://1vee1.com --recursive && rm -r build && node index.js && aws s3 sync build s3://1vee1.com"
+    "deploy": "aws s3 rm s3://www.1vee1.com --recursive && rm -r build && node index.js && aws s3 sync build s3://www.1vee1.com"
+  },
+  "devDependencies": {
+    "metalsmith-date-formatter": "^1.0.2"
   }
 }

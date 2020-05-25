@@ -5,13 +5,13 @@ var permalinks = require('metalsmith-permalinks');
 var sass = require('metalsmith-sass');
 const autoprefixer = require('metalsmith-autoprefixer');
 const collections = require('metalsmith-collections');
+var dateFormatter = require('metalsmith-date-formatter')
 var serve = require('metalsmith-serve');
 var watch = require('metalsmith-watch');
 
 Metalsmith(__dirname)
   .metadata({
     title: "1vee1",
-    description: "Covering all the latest happenings in the sweatiest game mode on earth",
     generator: "Who cares",
     url: "http://www.metalsmith.io/"
   })
@@ -26,6 +26,14 @@ Metalsmith(__dirname)
       }
     })
   )
+  .use(dateFormatter({
+    dates: [
+      {
+        key: 'date',
+        format: 'YYYY-MM-DD'
+      },
+    ]
+  }))
   .use(sass({
     file: './src/scss/main/index.scss',
     outputStyle: 'compressed',

@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167496250-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167496250-1');
+  </script>
+
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
@@ -10,23 +20,22 @@
 </head>
 
 <body class="post comp-post-container">
-  <!-- <header>
-    <p>
-      <a href="/">Home</a>
-    </p>
 
-  </header> -->
-  <!-- <main class="comp-post-container"> -->
-    <article class="comp-post-body">
-      <div class="comp-post-wrapper">
-        <h1>{{ title }}</h1>
-        <time>{{ date }}</time>
-        {{{ contents }}}
+  <main class="comp-post-body">
+    <aside class="comp-post-image-container">
+      <img class="comp-post-image {{img_css}}" src="{{image}}" alt="{{alt}}">
+      <div class="comp-post-mobile-nav">
+        <a href="/menu" class="go-to-menu mobile-go-to">(click here for menu)</a>
       </div>
+    </aside>
+    <article class="comp-post-wrapper">
+      <h1>{{ title }}</h1>
+      <time datetime="{{date}}">{{ date }}</time>
+      {{{ contents }}}
     </article>
-  <!-- </main> -->
+  </main>
 
-  <footer>
+  <footer class="comp-post-footer">
     <a href="/menu" class="go-to-menu">(click here for menu)</a>
   </footer>
 </body>
