@@ -3,13 +3,13 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167496250-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<Google Tracking ID>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-167496250-1');
+    gtag('config', '<Google Tracking ID>');
   </script>
 
   <meta charset="UTF-8" />
@@ -19,22 +19,22 @@
   <link href="css/index.css" rel="stylesheet">
 </head>
 
-<body class="posts">
-   <main class="comp-pc-posts">
-     <h1 class="comp-pc-title">Rocket League Posts</h1>
-     <div class="comp-pc-post-items">
+<body>
+   <main>
+     <h1>Rocket League Posts</h1>
+     <div>
       {{#each posts}}
-      <a class="comp-pc-post-item"
+      <a
       href="../{{ path }}">
-        <span class="comp-pc-post-title">{{title}}</span>
-        <time datetime="{{date}}" class="comp-pc-post-date">{{date}}</time>
+        <span>{{title}}</span>
+        <time datetime="{{date}}">{{date}}</time>
      </a>
       {{/each}}
      </div>
    </main>
 
   <footer>
-    <a href="../menu" class="go-to-menu">(click here for menu)</a>
+    <a href="../menu">(click here for menu)</a>
   </footer>
 
 </body>

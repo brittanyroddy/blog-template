@@ -6,62 +6,7 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <style amp-boilerplate>
-    body {
-      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
-
-    @-webkit-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-
-    @-moz-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-
-    @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-
-    @-o-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-
-    @keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
+    /* Do AMP styles here */
   </style><noscript>
     <style amp-boilerplate>
       body {
@@ -157,28 +102,27 @@
     <script type="application/json">
       {
         "vars" : {
-          "gtag_id": "UA-167496250-1",
+          "gtag_id": "<Google Tracking ID>",
           "config" : {
-            "UA-167496250-1": { "groups": "default" }
+            "<Google Tracking ID>": { "groups": "default" }
           }
         }
       }
     </script>
   </amp-analytics>
 
-  <main class="comp-post-body">
-    <aside class="comp-post-image-container">
-      <amp-img class="" layout="responsive" height="{{imageHeight}}" width="{{imageWidth}}" src="{{image}}"
+  <main>
+    <aside>
+      <amp-img layout="responsive" height="{{imageHeight}}" width="{{imageWidth}}" src="{{image}}"
         alt="{{alt}}"></amp-img>
     </aside>
-    <article class="comp-post-wrapper">
+    <article>
       <h1>{{ title }}</h1>
-      <!-- <a href="/menu">More RL here</a> -->
-      <small>By <a href="mailto: papawapato@gmail.com">Papawapato</a></small>
+      <small>By <a href="mailto: Whoever@gmail.com">Papawapato</a></small>
       <br>
       <time datetime="{{date}}">{{ date }}</time>
       {{{ contents }}}
-      <a href="/menu">Visit our site for more Rocket League articles!</a>
+      <a href="/menu">Visit our site for more Whatever articles!</a>
     </article>
   </main>
 </body>

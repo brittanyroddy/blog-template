@@ -8,4 +8,4 @@ alt: Three vintage telephones.
 description: Contact us
 ---
 
-Email: papawapato@gmail.com
+Email: hiya@gmail.com

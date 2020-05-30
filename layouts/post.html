@@ -3,13 +3,13 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167496250-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<Google Tracking ID>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-167496250-1');
+    gtag('config', '<Google Tracking ID>');
   </script>
 
   <meta charset="UTF-8" />
@@ -23,23 +23,23 @@
 
 <body class="post comp-post-container">
 
-  <main class="comp-post-body">
-    <aside class="comp-post-image-container">
-      <img class="comp-post-image {{img_css}}" src="{{image}}" alt="{{alt}}">
-      <div class="comp-post-mobile-nav">
+  <main>
+    <aside>
+      <img src="{{image}}" alt="{{alt}}">
+      <div>
         <a href="/menu" class="go-to-menu mobile-go-to">(click here for menu)</a>
       </div>
     </aside>
-    <article class="comp-post-wrapper">
+    <article>
       <h1>{{ title }}</h1>
-      <small>By <a href = "mailto: papawapato@gmail.com">Papawapato</a></small>
+      <small>By <a href = "mailto: hiya@gmail.com">Mike Tyson</a></small>
       <br>
       <time datetime="{{date}}">{{ date }}</time>
       {{{ contents }}}
     </article>
   </main>
 
-  <footer class="comp-post-footer">
+  <footer>
     <a href="/menu" class="go-to-menu">(click here for menu)</a>
   </footer>
 </body>

@@ -72,7 +72,6 @@ Metalsmith(__dirname)
       x[key].collection = ['amp']
       x[key].imageString = x[key].image ? safeString(x[key].image) : null
       x[key].titleString = x[key].title ? safeString(x[key].title) : null
-      x[key].styles = fs.readFileSync('build/css/index.css').toString()
 
       renameKey(key, key.replace(ampExt, '-amp.'), x)
     })
