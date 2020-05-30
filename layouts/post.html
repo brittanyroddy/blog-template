@@ -16,6 +16,8 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="amphtml" href="{{ampLink}}">
+  <link rel="canonical" href="{{ nonAmpLink }}">
   <link href="/css/index.css" rel="stylesheet">
 </head>
 
@@ -30,6 +32,8 @@
     </aside>
     <article class="comp-post-wrapper">
       <h1>{{ title }}</h1>
+      <small>By <a href = "mailto: papawapato@gmail.com">Papawapato</a></small>
+      <br>
       <time datetime="{{date}}">{{ date }}</time>
       {{{ contents }}}
     </article>

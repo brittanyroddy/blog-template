@@ -1,5 +1,6 @@
 ---
 layout: posts.html
+changefreq: daily
 ---
 <!-- 
 <h2>Read what I have to say</h2>

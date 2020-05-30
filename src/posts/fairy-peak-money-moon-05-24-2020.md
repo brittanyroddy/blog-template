@@ -1,11 +1,15 @@
 ---
 title: Fairy Peak VS Monkey Moon
 date: 2020-05-24
-collection: posts
+lastmod: 2020-05-24
+priority: 0.9
+collection: 
+  - posts
 layout: post.html
 image: https://rocketleague.media.zestyio.com/rocket-league-batmobile-official1.309bf22bd29c2e411e9dd8eb07575bb1.jpg
+imageWidth: 1920px
+imageHeight: 1080px
 alt: Rocket League player Fair Peak's batmobile.
-img_css: postimg-2
 description: Rocket League news coverage blog post analyzing Fairy Peak vs Monkey Moon 1v1 match in the Fusion Tournament.
 ---
 

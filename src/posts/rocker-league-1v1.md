@@ -1,9 +1,14 @@
 ---
 title: 1vee1 - Rocket League News With a Twist
 date: 2020-05-19
-collection: posts
+lastmod: 2020-05-19
+priority: 0.9
+collection: 
+ - posts
 layout: post.html
 image: https://images4.alphacoders.com/628/628590.jpg
+imageWidth: 1920px
+imageHeight: 1080px
 alt: Two Rocket League cars arriving to the pitch to play.
 description: Rocket League 1v1 deserves more attention.  This post details the purpose of 1vee1.com.  Much respect to Fairy Peak, Okhalid, Squishy Muffins and many more for giving us amazing content for years.
 ---

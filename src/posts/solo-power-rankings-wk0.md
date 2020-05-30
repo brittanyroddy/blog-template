@@ -1,9 +1,14 @@
 ---
 title: Rocket League 1v1 Power Rankings - Week 0
 date: 2020-05-20
-collection: posts
+lastmod: 2020-05-20
+priority: 0.9
+collection: 
+ - posts
 layout: post.html
 image: https://images8.alphacoders.com/820/820113.jpg
+imageWidth: 2666px
+imageHeight: 1500px
 alt: Top down view of Rocket League pitch.
 description: Rocket League 1v1 deserves more attention.  This post details the purpose of 1vee1.com.  Much respect to Fairy Peak, Okhalid, Squishy Muffins and many more for giving us amazing content for years.
 ---

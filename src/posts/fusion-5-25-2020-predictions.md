@@ -1,9 +1,14 @@
 ---
 title: Fusion Tournament - 2020-05-25 Predictions
 date: 2020-05-25
-collection: posts
+lastmod: 2020-05-25
+priority: 0.9
+collection: 
+ - posts
 layout: post.html
 image: https://images7.alphacoders.com/888/888532.png
+imageWidth: 3840px
+imageHeight: 2160px
 alt: Rocket League cars scramble to score a goal (animated).
 description: Rocket League Fusion Tournament daily updates and predictions day 1 2020.
 ---

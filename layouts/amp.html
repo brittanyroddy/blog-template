@@ -1,0 +1,186 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+  <meta charset="UTF-8" />  
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none;
+      }
+    </style>
+  </noscript>
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style amp-custom>
+    body {
+      background-color: black;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Roboto', sans-serif;
+      color: white;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      font-size: xx-large;
+    }
+
+    span,
+    p,
+    a,
+    label,
+    input,
+    strong,
+    button,
+    small,
+    li {
+      font-family: 'Source Sans Pro', sans-serif;
+      color: white;
+    }
+
+    time {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: smaller;
+      color: white;
+    }
+
+
+    article a {
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #f3edff;
+      text-decoration: underline;
+    }
+
+    .comp-post-body {
+      background-image: url('https://images4.alphacoders.com/628/628590.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .comp-post-wrapper {
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient(rgba(56, 29, 112, .7), rgba(10, 0, 31, 1));
+    }
+  </style></noscript>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "{{ titleString }}",
+      "datePublished": "{{ date }}",
+      "image": [
+        "{{ imageString }}"
+      ]
+    }
+  </script>
+  <link rel="canonical" href="{{ nonAmpLink }}">
+</head>
+
+<body class="post comp-post-container">
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+      {
+        "vars" : {
+          "gtag_id": "UA-167496250-1",
+          "config" : {
+            "UA-167496250-1": { "groups": "default" }
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
+
+  <main class="comp-post-body">
+    <aside class="comp-post-image-container">
+      <amp-img class="" layout="responsive" height="{{imageHeight}}" width="{{imageWidth}}" src="{{image}}"
+        alt="{{alt}}"></amp-img>
+    </aside>
+    <article class="comp-post-wrapper">
+      <h1>{{ title }}</h1>
+      <!-- <a href="/menu">More RL here</a> -->
+      <small>By <a href="mailto: papawapato@gmail.com">Papawapato</a></small>
+      <br>
+      <time datetime="{{date}}">{{ date }}</time>
+      {{{ contents }}}
+      <a href="/menu">Visit our site for more Rocket League articles!</a>
+    </article>
+  </main>
+</body>
+
+</html>
