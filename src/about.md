@@ -1,9 +1,9 @@
 ---
-title: About us
-date: 2020-05-20
+title: About
+date: 2020-06-03
 layout: post.html
-description: About Us.  Say something about your blog's purpose.
+description: Hey y'all! I am a woman in tech, a crafter, a traveller, a wifey, and an Okie!
 ---
 
-## Yo, you know what I'm about
-Yada yada yada
+## Woman in Tech
+I am currently a software engineer and architect at a small but growing company. Tech is my passion but it wasn't always that way! Like many young women, I moved into the tech world via another passion- writing! 

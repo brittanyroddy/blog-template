@@ -11,7 +11,7 @@
 
     gtag('config', '<Google Tracking ID>');
   </script>
-  
+
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
@@ -20,30 +20,22 @@
 </head>
 
 <body>
-    <div class="header">
-      <h1>Beauty and the Breakpoint</h1>
-    </div>
+   <main>
+     <h1>beauty & fitness posts</h1>
+     <div>
+      {{#each posts}}
+      <a
+      href="../{{ path }}">
+        <span>{{title}}</span>
+        <time datetime="{{date}}">{{date}}</time>
+     </a>
+      {{/each}}
+     </div>
+   </main>
 
-  <nav class="navbar">
-      <!-- <a href="javascript:history.back()">&larr; Go Back</a> -->
-      <a href="/tech/">tech & gaming</a>
-      <a href="/beauty/">beauty & fitness</a>
-      <a href="/crafting/">crafting</a>
-      <a href="/adventuring/">adventuring</a>
-      <a href="/about/">about</a>
-      <a class="right" href="/contact">contact</a>
-  </nav>
-
-  <div class="row">
-    <div class="side">...</div>
-    <div class="main">...</div>
-  </div>
-
-  <div class="footer">
-    <h2>Footer</h2>
-  </div>
-
-  {{{ contents }}}
+  <footer>
+    <a href="../menu">(return home)</a>
+  </footer>
 
 </body>
 

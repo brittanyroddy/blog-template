@@ -17,7 +17,7 @@ console.log('cuid:', ampExt)
 
 Metalsmith(__dirname)
   .metadata({
-    title: "1vee1",
+    title: "Beauty and the Breakpoint",
     generator: "Who cares",
     url: siteURL,
   })
